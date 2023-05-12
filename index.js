@@ -70,7 +70,7 @@ function getTotaleCarrello(prodotti) {
     const prodotto = prodotti[index];
     totale += prodotto.prezzo * prodotto.qty;
   }
-  prodotti.
+  
   while (i < prodotti.length) {
 
   }
