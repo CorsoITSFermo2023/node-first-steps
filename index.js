@@ -47,6 +47,9 @@ const carrello = {
       totale += prodotto.prezzo * prodotto.qty;
     }
     return totale;
+  },
+  getTotale2: function() {
+    
   }
 };
 
