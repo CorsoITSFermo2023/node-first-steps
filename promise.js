@@ -21,7 +21,9 @@ function secondaOperazione(input, callback) {
 function primaOperazionePromise(input) {
   const p = new Promise(
     (resolve, reject) => {
-      primaOperazione(input, resolve)
+      primaOperazione(input, (output1) => {
+        resolve(output1)
+      })
     }
   )
   return p;
