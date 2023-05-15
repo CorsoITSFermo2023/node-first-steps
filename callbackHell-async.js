@@ -33,4 +33,3 @@ const callback1 = function (output1) {
 }
 
 primaOperazione('cose', callback1);
-callback1();

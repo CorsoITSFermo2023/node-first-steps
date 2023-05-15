@@ -1,25 +1,22 @@
 function primaOperazione(input, callback) {
-  const output = ' primaOperazione ' + input;
-  console.log(output);
-  if (callback) {
-    callback(output);
-  }
+  setTimeout(() => {
+    const output = ' primaOperazione ' + input;
+    console.log(output);
+    if (callback) {
+      callback(output);
+    }
+  }, 0)
 }
 
 function secondaOperazione(input, callback) {
-  const output = ' secondaOperazione ' + input;
-  console.log(output);
-  if (callback) {
-    callback(output);
-  }
+  setTimeout(() => {
+    const output = ' secondaOperazione ' + input;
+    console.log(output);
+    if (callback) {
+      callback(output);
+    }
+  }, 0)
 }
-
-primaOperazione('cose', (output1) => {
-  secondaOperazione(output1, (output2) => {
-    console.log(output2);
-  })
-});
-
 
 function primaOperazionePromise(input) {
   const p = new Promise(
