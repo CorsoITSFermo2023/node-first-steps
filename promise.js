@@ -38,8 +38,13 @@ function secondaOperazionePromise(input) {
 
 primaOperazionePromise('prova')
   .then(
-    output1 => secondaOperazione(output1)
+    (output1) => {
+      return secondaOperazionePromise(output1)
+    } 
   )
   .then(
-    output2 => console.log(output2)
+    (output2) => {
+      console.log(output2)
+      return output2;
+    }
   )
