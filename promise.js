@@ -36,15 +36,22 @@ function secondaOperazionePromise(input) {
   return p;
 };
 
-primaOperazionePromise('prova')
+let a1 = ((1 + 1) + 4) + 3;
+
+const p1 = primaOperazionePromise('prova')
   .then(
     (output1) => {
       return secondaOperazionePromise(output1)
     } 
   )
+const p2 = p1
   .then(
     (output2) => {
       console.log(output2)
       return output2;
     }
-  )
+  );
+
+const fine = p2.then(
+  finale => console.log(finale)
+)
